@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title> Project Name</title>
-	 <link rel="stylesheet" type="text/css" href="style.css">
-	 <script src="myScript.js"></script>
-</head>
-<body>
-	<header>
-		<div class="navbar">
-			<a href="index.html">Home</a>
-			<a href="part1.html">part1</a>
-			<a href="part2.html">part2</a>
-			<a href="part3.html">part3</a>
-			<div class="dropdown">
-                <button class="dropbtn">Account 
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="#">My Profile</a>
-                  <a href="#">Sign out</a>
-                </div>
-            </div> 
-		</div>
-	</header>
-<div>
-	<h1> HI, This is our project</h1>
-	<button type="button" onclick="myFunction()">Click Me test script.js connection</button>
-	<p id="demo"></p>
-</div>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
+      rel="stylesheet"
+    />
 
-</body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Project Name</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="myScript.js"></script>
+  </head>
+  <body>
+    <nav id="mainNav" class="navbar navbar-dark navbar-expand-md">
+      <a href="#" class="navbar-brand">Holder</a>
+      <button
+        class="navbar-toggler"
+        data-toggler="collapse"
+        data-target="#navLinks"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="part1.html" class="nav-link">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a href="part2.html" class="nav-link">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a href="part3.html" class="nav-link">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="heading">
+      <h1>HI, this is our project</h1>
+      <button type="button" class="btn btn-primary" onclick="myFunction()">
+        Test Script
+      </button>
+      <p id="demo"></p>
+    </section>
+    <!--
+		<header>  
+		<div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="part1.html">part1</a>
+        <a href="part2.html">part2</a>
+        <a href="part3.html">part3</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Account
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">My Profile</a>
+            <a href="#">Sign out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div>
+      <h1>HI, This is our project</h1>
+      <button type="button" onclick="myFunction()">
+        Click Me test script.js connection
+      </button>
+      <p id="demo"></p>
+    </div>-->
+  </body>
 </html>
