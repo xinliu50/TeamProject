@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>User Profile Page</title>
+
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+  <div id="w">
+    <div id="content" class="clearfix">
+      <div id="userphoto"><img src="images/avatar.png" alt="default avatar"></div>
+      <h1><b>My Profile</b></h1>
+
+      <nav id="profiletabs">
+        <ul class="clearfix">
+          <li><a href="#bio" class="sel">About Me</a></li>
+          <li><a href="#Personal">Personal Characteristics</a></li>
+          <li><a href="#Interests">Interests</a></li>
+        </ul>
+      </nav>
+      
+      <section id="bio">
+        <p class="b"><span>Username <img src="images/edit.png" alt="*Edit*"></span> John Doe</p>
+        <p class="b"><span>Education <img src="images/edit.png" alt="*Edit*"></span> Brooklyn College</p>
+        <p class="b"><span>Occupation <img src="images/edit.png" alt="*Edit*"></span> Student</p> 
+        <p class="b"><span>My Tags <img src="images/edit.png" alt="*Edit*"></span> #JAVA  #C++ #HTML  #JavaScript</p>
+        <p class="b"><span>Contact Info<img src="images/edit.png" alt="*Edit*"></span> JohnDoe@gmail.com</p>
+        <p class="b"><span>Social Media<img src="images/edit.png" alt="*Edit*"></span> <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a></p>
+  <style>
+    a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+</style>   
+      </section>
+      
+
+      <section id="Personal" class="hidden">
+        <p class="b"><span>Gender <img src="images/edit.png" alt="*Edit*"></span> N/A</p>
+        <p class="b"><span>Languages <img src="images/edit.png" alt="*Edit*"></span> N/A</p>
+        <p class="b"><span>Ethnicity <img src="images/edit.png" alt="*Edit*"></span> N/A</p>
+        <p class="b"><span>Religions <img src="images/edit.png" alt="*Edit*"></span> N/A</p> 
+ 
+      </section>
+      
+      
+      <section id="Interests" class="hidden">
+         <p class="b"><span>Academic Interests <img src="images/edit.png" alt="*Edit*"></span> N/A</p>
+        <p class="b"><span>Clubs and Sports <img src="images/edit.png" alt="*Edit*"></span> N/A</p>
+      </section>
+
+    </div>
+  </div>
+<script type="text/javascript">
+$(function(){
+  $('#profiletabs ul li a').on('click', function(e){
+    e.preventDefault();
+    var newcontent = $(this).attr('href');
+    
+    $('#profiletabs ul li a').removeClass('sel');
+    $(this).addClass('sel');
+    
+    $('#content section').each(function(){
+      if(!$(this).hasClass('hidden')) { $(this).addClass('hidden'); }
+    });
+    
+    $(newcontent).removeClass('hidden');
+  });
+});
+</script>
+</body>
+</html>

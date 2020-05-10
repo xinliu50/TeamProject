@@ -2,6 +2,10 @@
 <html>
   <head>
     <link
+      href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -9,6 +13,113 @@
     />
     <title>Project Name</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="myScript.js"></script>
+  </head>
+  <body>
+    <nav id="mainNav" class="navbar navbar-light navbar-expand-md">
+      <a href="#" class="navbar-brand"><b>Holder</b></a>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navLinks"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item active">
+            <a href="signIn.html" class="nav-link">Sign In</a>
+          </li>
+          <li class="nav-item active">
+            <a href="part2.html" class="nav-link">Profile</a>
+          </li>
+          <li class="nav-item active">
+            <a href="part3.html" class="nav-link">Settings</a>
+          </li>
+          <li id="my-target" class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              data-target="#my-target"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">My Profile</a>
+              <a class="dropdown-item" href="#">Sign out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="banner">
+      <section class="blurb">
+        <h1>HI, this is our project</h1>
+        <button type="button" class="btn btn-primary" onclick="location.href='plans.html'">
+          SEE PLANS
+        </button>
+        <p id="demo"></p>
+      </section>
+    </div>
+
+    <section class="banner2">
+      <div class="break">
+        <h1>Study all day</h1>
+      </div>
+    </section>
+
+    <div class="banner">
+      <section class="blurb">
+        <h1>HI, this is our project</h1>
+          
+        </button>
+        <p id="demo"></p>
+      </section>
+    </div>
+
+    <div class="card-footer">
+      <div class="footerContent">
+        <h1>Placeholder for Footer</h1>
+      </div>
+    </div>
+
+    <!--
+		<header>  
+		<div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="signIn.html">part1</a>
+        <a href="part2.html">part2</a>
+        <a href="part3.html">part3</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Account
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">My Profile</a>
+            <a href="#">Sign out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div>
+      <h1>HI, This is our project</h1>
+      <button type="button" onclick="myFunction()">
+        Click Me test script.js connection
+      </button>
+      <p id="demo"></p>
+	</div>-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -24,43 +135,5 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="myScript.js"></script>
-  </head>
-  <body>
-    <nav id="mainNav" class="navbar navbar-dark navbar-expand-md">
-      <a href="#" class="navbar-brand">Holder</a>
-      <button
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navLinks"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navLinks">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a href="part1.html" class="nav-link">Sign Up</a>
-          </li>
-          <li class="nav-item">
-            <a href="part2.html" class="nav-link">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a href="part3.html" class="nav-link">Settings</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <section id="heading">
-      <h1>HI, this is our project</h1>
-      <button type="button" class="btn btn-primary" onclick="location.href='plans.html'">
-        SEE PLANS
-      </button>
-      <p id="demo"></p>
-    </section>
   </body>
 </html>
