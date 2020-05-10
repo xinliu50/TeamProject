@@ -1,8 +1,15 @@
-html, body, div, span, h1, i, ul, li {
+html,
+body,
+div,
+span,
+h1,
+i,
+ul,
+li {
+  font-family: "Viga", sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
   outline: none;
@@ -13,26 +20,28 @@ html, body, div, span, h1, i, ul, li {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-html { overflow-y: scroll; }
-body { 
-  background: green; 
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+html {
+  overflow-y: scroll;
+}
+body {
+  background: green;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #313131;
-  font-size: 62.5%; 
-  line-height: 1; 
+  font-size: 62.5%;
+  line-height: 1;
 }
 h1 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2.5em;
   line-height: 1.5em;
   letter-spacing: -0.05em;
   margin-bottom: 20px;
-  padding: .1em 0;
+  padding: 0.1em 0;
   color: #444;
-	position: relative;
-	overflow: hidden;
-	white-space: nowrap;
-	text-align: center;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .navbar {
@@ -42,7 +51,6 @@ h1 {
   color: #4357ad;
 }
 
-
 p {
   display: block;
   font-size: 1.4em;
@@ -51,9 +59,13 @@ p {
   color: #555;
 }
 
-a { color: #5a9352; text-decoration: none; }
-a:hover { text-decoration: underline; }
-
+a {
+  color: #5a9352;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 #w {
   display: block;
@@ -84,9 +96,9 @@ a:hover { text-decoration: underline; }
   display: block;
   padding: 2px;
   background: #fff;
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 #profiletabs {
@@ -95,9 +107,16 @@ a:hover { text-decoration: underline; }
   height: 50px;
 }
 
-#profiletabs ul { list-style: none; display: block; width: 70%; height: 50px; }
-#profiletabls ul li { float: left; }
-#profiletabs ul li a { 
+#profiletabs ul {
+  list-style: none;
+  display: block;
+  width: 70%;
+  height: 50px;
+}
+#profiletabls ul li {
+  float: left;
+}
+#profiletabs ul li a {
   display: block;
   float: left;
   padding: 8px 11px;
@@ -121,7 +140,7 @@ a:hover { text-decoration: underline; }
 }
 
 #profiletabs ul li a.sel {
-  background: #FFB633;
+  background: #ffb633;
   border-color: #d1cdb5;
 }
 
@@ -142,16 +161,29 @@ a:hover { text-decoration: underline; }
   margin-bottom: 5px;
 }
 .b span {
-  float: left; 
+  float: left;
   width: 250px;
   font-weight: bold;
 }
-.b span img { 
+.b span img {
   cursor: pointer;
 }
 
-.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
-.clearfix { display: inline-block; }
- 
-html[xmlns] .clearfix { display: block; }
-* html .clearfix { height: 1%; }
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
