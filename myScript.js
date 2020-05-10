@@ -1,22 +1,35 @@
+// var USERNAME;
+// var PASSWORD;
+
+function goToPlan() {
+	localStorage.setItem("PLAN", "NONE");
+	document.location.href='plans.html'
+}
 function tableFunction(plan){
 	let id = plan;
 	var x = document.getElementById("plantable");
 	if(id == 'basic'){
 		unSelected(x,'group2','group3')
 		setSelect(x,'group1');
+		localStorage.setItem("PLAN", 'basic');
 	}
 	else if(id == 'standard'){
 		unSelected(x,'group1','group3')
 		setSelect(x,'group2');
+		localStorage.setItem("PLAN", 'standard');
 	}
 	else if(id == 'premium'){
 		unSelected(x,'group2','group1')
 		setSelect(x,'group3');
+		localStorage.setItem("PLAN", 'premium');
 	}
 }
 
 function checkIfSelectPlan(){
-	document.location.href="signUp.html"
+	if(localStorage.getItem("PLAN") == "NONE")
+		window.alert("Please select a plan first!");
+	else
+		document.location.href="signUp.html"
 }
 
 function setSelect(x,group){
@@ -69,8 +82,23 @@ function checkPassword(){
 		window.alert("Password requires at least 2 letters and 6 numbers")
 	else if(pass1 != pass2)
 		window.alert("Password confirm failed!!")
-	else 
+	else {
+		localStorage.setItem("USERNAME", userName);
+		localStorage.setItem("PASSWORD", pass1);
 		window.location.href='cardForm/creditCardForm.html';
+	}
+}
 
-	return false;
+function signIn(){
+	var userName = document.getElementById('userNameFromSignIn').value;
+	var password = document.getElementById('passFromSignIn').value;
+
+	if(userName != localStorage.getItem("USERNAME"))
+		window.alert("User Not Found!")
+	else if(password != localStorage.getItem("PASSWORD"))
+		window.alert("Wrong Password!")
+	// var userName = localStorage.getItem("USERNAME");
+	// var password = localStorage.getItem("PASSWORD");
+	// console.log(userName);
+	// console.log(password)
 }
