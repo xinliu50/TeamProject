@@ -57,6 +57,7 @@ $(function() {
         } else {
 
             alert("Everything is correct");
+            window.location = '../signIn.html';
         }
     });
 });
