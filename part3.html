@@ -1,67 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <title>Project Name</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="myScript.js"></script>
-  </head>
-  <body>
-    <nav id="mainNav" class="navbar navbar-light navbar-expand-md">
-      <a href="#" class="navbar-brand"><b>Holder</b></a>
-      <button
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navLinks"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navLinks">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a href="index.html" class="nav-link">HOME</a>
-          </li>
-          <li class="nav-item active">
-            <a href="part1.html" class="nav-link">Sign Up</a>
-          </li>
-          <li class="nav-item active">
-            <a href="part2.html" class="nav-link">Profile</a>
-          </li>
-          <li class="nav-item active">
-            <a href="part3.html" class="nav-link">Settings</a>
-          </li>
-        </ul>
+<html lang="en">
+   <head>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+         crossorigin="anonymous"
+         />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <title>Account Settings</title>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <script src="myScript.js"></script>
+   </head>
+   <body >
+      <nav id="mainNav" class="navbar navbar-light navbar-expand-md">
+         <a href="#" class="navbar-brand"><b>Holder</b></a>
+         <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navLinks"
+            aria-label="Toggle navigation"
+            >
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                  <a href="index.html" class="nav-link">HOME</a>
+               </li>
+               <li class="nav-item active">
+                  <a href="part1.html" class="nav-link">Sign Up</a>
+               </li>
+               <li class="nav-item active">
+                  <a href="part2.html" class="nav-link">Profile</a>
+               </li>
+               <li class="nav-item active">
+                  <a href="part3.html" class="nav-link">Settings</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div id="container" class="settingsBody">
+         <div id=main>
+            <div class="jumbotron text-center" style="background: url(A.S.Background)">
+               <h1>Account Settings </h1>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-4">
+                     <h3>Your Subscription </h3>
+                     <p>Holder BasePlan</p>
+                     <p> (Multi-Device) </p>
+                     <p>$ 9.50/mo</p>
+                     <p><a href ="#"> MANAGE PLAN</a></p>
+                  </div>
+                  <div class="col-sm-4">
+                     <h3>Upcoming Charges</h3>
+                     <p>Payment Date: 06/05/20</p>
+                     <p>Amount: $9.50</p>
+                     <p>Billing History</p>
+                     <p>Latest Payment: 05/05/20</p>
+                     <p><a href="#"> VIEW PAYMENT HISTORY</a></p>
+                  </div>
+                  <div class="col-sm-4">
+                     <h3>Your Account</h3>
+                     <p>Personal Info</p>
+                     <p>JOHN</p>
+                     <p>04/01/89</p>
+                     <p>Male</p>
+                     <p>JohnDoe@gmail.com</p>
+                     <p><a href="changeInfo.html">UPDATE INFO</a></p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-4">
+                     <h3>Automatic Payment</h3>
+                     <label class="switch">
+                     <input type="checkbox" checked>
+                     <span class="slider round"></span>
+                     </label>
+                     <p>Automatic payments are made when the montly fees are due</p>
+                  </div>
+                  <div class="col-sm-4">
+                     <h3>Allow Multiple Device Usage</h3>
+                     <label class="switch">
+                     <input type="checkbox" checked>
+                     <span class="slider round"></span>
+                     </label>
+                     <p>Allows the user to access account on maximum of 3 devices</p>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-    </nav>
-
-    <div>
-      <h1>HI, This is part3</h1>
-    </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <footer id="footer">
+      </footer>
+   </body>
 </html>
