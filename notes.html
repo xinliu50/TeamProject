@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="utf-8" />
+    <title>Notes Page</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <title>Project Name</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Reenie+Beanie&subset=latin"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="myScript.js"></script>
   </head>
   <body>
@@ -32,66 +34,31 @@
             <a href="index.html" class="nav-link">HOME</a>
           </li>
           <li class="nav-item active">
-            <a href="signIn.html" class="nav-link">Sign In</a>
+            <a href="part1.html" class="nav-link">Sign Up</a>
           </li>
           <li class="nav-item active">
-            <a href="UserProfile/index.html" class="nav-link">Profile</a>
+            <a href="part2.html" class="nav-link">Profile</a>
           </li>
           <li class="nav-item active">
             <a href="part3.html" class="nav-link">Settings</a>
-          </li>
-          <li id="my-target" class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              data-target="#my-target"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="UserProfile/index.html">My Profile</a>
-              <a class="dropdown-item" href="#">Sign out</a>
-            </div>
           </li>
         </ul>
       </div>
     </nav>
 
-    <div class="banner">
-      <section class="blurb">
-        <h1>HI, this is our project</h1>
-        <button type="button" class="btn btn-primary" onclick="location.href='plans.html'">
-          SEE PLANS
-        </button>
-        <p id="demo"></p>
-      </section>
-    </div>
-    
-    <section class="container-lg">
-      <div class="break">
-        <h1>Study all day</h1>
-      </div>
+    <section class="notesVidcontainer">
+      <h1>Notes</h1>
+      <label for="notes"></label>
+
+      <textarea id="desc" rows="13" cols="60"> </textarea>
+
+      <iframe
+        width="420"
+        height="315"
+        src="https://www.youtube.com/embed/JLXefZ7N7kM"
+      >
+      </iframe>
     </section>
-
-    <div class="banner3" id="second">
-      <section class="blurb">
-        <h1>HI, this is our project</h1>
-          
-        </button>
-        <p id="demo"></p>
-      </section>
-    </div>
-
-    <div class="card-footer">
-      <div class="footerContent">
-        <h1>Placeholder for Footer</h1>
-      </div>
-    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
