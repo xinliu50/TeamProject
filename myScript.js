@@ -44,3 +44,29 @@ function displayDate(){
 	var d = n.getDate();
 	document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
 }
+
+function checkPassword(){
+	var userName = document.getElementById('userName').value;
+	var pass1 = document.getElementById('pass1').value;
+	var pass2 = document.getElementById('pass2').value;
+	var number = 0;
+	var letter = 0;
+
+	var copyPass1 = pass1.toLowerCase();
+	for(let i = 0; i < copyPass1.length; i ++){
+		if(copyPass1.charAt(i) >= '0' && copyPass1.charAt(i) <= '9')
+			number ++;
+		else if(copyPass1.charAt(i) >= 'a' && copyPass1.charAt(i) <= 'z')
+			letter ++;
+	}
+	if(userName.length < 6)
+		window.alert("Please insert at least length 6 of the UserName")
+	else if(pass1.length < 8 || pass2.length < 8 || number < 6 || letter < 2)
+		window.alert("Password requires at least 2 letters and 6 numbers")
+	else if(pass1 != pass2)
+		window.alert("Password confirm failed!!")
+	else 
+		window.location.href='cardForm/creditCardForm.html';
+
+	return false;
+}
