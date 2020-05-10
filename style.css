@@ -49,3 +49,11 @@ body {
   color: black;
   text-align: center;
 }
+
+.settingsBody{
+  background: url(A.S.Background.jpg);
+  height: 800px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
