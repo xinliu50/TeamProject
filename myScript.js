@@ -15,6 +15,10 @@ function tableFunction(plan){
 	}
 }
 
+function checkIfSelectPlan(){
+	document.location.href="signUp.html"
+}
+
 function setSelect(x,group){
 	var y = x.getElementsByClassName(group);
 	var i;
