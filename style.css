@@ -55,3 +55,90 @@
   display: block;
 }
 
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;     
+  margin: 0 auto;
+}
+
+.plans a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 20px;
+}
+
+.plans a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.plans .previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.plans .round {
+  border-radius: 50%;
+}
+
+.planDetails {
+  position: absolute;
+  top: 30%;     
+  margin: 0 auto;
+  width: 100%;
+}
+
+.planButtons {
+  position: relative;
+  left: 50%;
+}
+
+ /* .planButtons button{
+  background-color: rgb(173, 42, 42);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px;
+  cursor: pointer;
+}  */
+
+#plantable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#plantable td, #plantable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* #plantable tr:nth-child(even){background-color: #f2f2f2;}  */
+
+#plantable tr:hover {background-color: #ddd;}
+
+#plantable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+#plantableFirstRow button{
+  background-color: #4CAF50; /* Green */
+  border: 2px solid white;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
