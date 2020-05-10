@@ -51,6 +51,10 @@ h1 {
   color: #4357ad;
 }
 
+.navbar .nav-item active {
+  font-family: "Viga", sans-serif;
+}
+
 p {
   display: block;
   font-size: 1.4em;
