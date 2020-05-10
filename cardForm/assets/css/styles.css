@@ -119,7 +119,25 @@ background: linear-gradient(-68deg,
     }
 }
 
-
+.backButton a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 20px;
+  }
+  
+.backButton a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.backButton .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+.backButton .round {
+    border-radius: 50%;
+  }
 
 
 /* .examples {
