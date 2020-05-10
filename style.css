@@ -24,6 +24,11 @@ body {
   margin-right: 10px;
 }
 
+.banner3 {
+  background: url(images/craming.jpg);
+  height: 800px;
+  color: #ffffff;
+}
 .blurb {
   padding-top: 300px;
   padding-right: 300px;
@@ -50,7 +55,7 @@ body {
   text-align: center;
 }
 
-.settingsBody{
+.settingsBody {
   background: url(images/A.S.Background.jpg);
   height: 800px;
   color: black;
@@ -61,7 +66,7 @@ body {
 .main {
   position: absolute;
   left: 50%;
-  top: 50%;     
+  top: 50%;
   margin: 0 auto;
 }
 
@@ -87,19 +92,19 @@ body {
 
 .planDetails {
   position: absolute;
-  top: 10%;     
+  top: 10%;
   margin: 0 auto;
   width: 100%;
 }
 
-.planDetails h1{
+.planDetails h1 {
   position: relative;
   top: 10px;
   left: 40%;
 }
 
-.planDetails #continue{
-  background-color: #4CAF50; /* Green */
+.planDetails #continue {
+  background-color: #4caf50; /* Green */
   border: 2px solid white;
   color: white;
   padding: 16px 32px;
@@ -126,22 +131,25 @@ body {
   width: 100%;
 }
 
-#plantable td, #plantable th {
+#plantable td,
+#plantable th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#plantable tr:hover {background-color: #ddd;}
+#plantable tr:hover {
+  background-color: #ddd;
+}
 
 #plantable th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
-#plantableFirstRow button{
-  background-color: #4CAF50; /* Green */
+#plantableFirstRow button {
+  background-color: #4caf50; /* Green */
   border: 2px solid white;
   color: white;
   padding: 16px 32px;
@@ -154,7 +162,9 @@ body {
   cursor: pointer;
 }
 
-.logForm body {font-family: Arial, Helvetica, sans-serif;}
+.logForm body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .logForm form {
   position: absolute;
   top: 10%;
@@ -163,7 +173,8 @@ body {
   width: 50%;
 }
 
-.logForm input[type=text], input[type=password] {
+.logForm input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -173,7 +184,7 @@ body {
 }
 
 .logForm button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
