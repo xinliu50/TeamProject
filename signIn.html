@@ -34,7 +34,7 @@
             <a href="index.html" class="nav-link">HOME</a>
           </li>
           <li class="nav-item">
-            <a href="part1.html" class="nav-link">Sign Up</a>
+            <a href="signIn.html" class="nav-link">Sign In</a>
           </li>
           <li class="nav-item">
             <a href="part2.html" class="nav-link">Profile</a>
@@ -63,25 +63,6 @@
         </ul>
       </div>
     </nav>
-    <!--<header>
-      <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="part1.html">part1</a>
-        <a href="part2.html">part2</a>
-        <a href="part3.html">part3</a>
-        <div class="dropdown">
-          <button class="dropbtn">
-            Account
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">My Profile</a>
-            <a href="#">Sign out</a>
-          </div>
-        </div>
-      </div>
-    </header>-->
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -97,8 +78,28 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <div>
-      <h1>HI, This is part1</h1>
-    </div>
+
+    <div class='logForm'>
+      <form method="post">
+          <div class="imgcontainer">
+              <img src="images/avatar1.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+              
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw1" required>
+              
+              <button type="submit">Sign In</button>
+              <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+          <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+      </form>
+  </div>
   </body>
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Project Name</title>
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	 <script src="myScript.js"></script>
+</head>
+<body onload="displayDate()">
+<div class='backButton'>
+    <a href="index.html" class="previous round"> <big><big><big>&#8249; </big></big></big></a>
+    <div class='planDetails'>
+        <h1> Choose a Plan</h1>
+        <table id="plantable">
+            <tr id="plantableFirstRow">
+              <th></th>
+              <th id='basic' onclick="tableFunction('basic')"> <button> Basic </button></th>
+              <th id='standard' onclick="tableFunction('standard')"> <button> Standard</button></th>
+              <th id='premium' onclick="tableFunction('premium')"> <button> Premium</button></th>
+            </tr>
+            <tr>
+                <td>Monthly price after free month ends on <p id='date'> </p></td>
+                <td class='group1'>US$14.99</td>
+                <td class='group2'>US$19.99</td>
+                <td class='group3'>US$29.99</td>
+              </tr>
+            <tr>
+              <td>Maximum Access to 10 Notes per day</td>
+              <td class='group1'>&#10004;</td>
+              <td class='group2'>&#10004;</td>
+              <td class='group3'>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Maximum Access to 50 Notes per day</td>
+                <td class='group1'>&#10006;</td>
+                <td class='group2'>&#10004;</td>
+                <td class='group3'>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Unlimited Amount of Times Accessing Notes</td>
+                <td class='group1'>&#10006;</td>
+                <td class='group2'>&#10006;</td>
+                <td class='group3'>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Watch Videos That Accompany The Notes</td>
+              <td class='group1'>&#10006;</td>
+              <td class='group2'>&#10004;</td>
+              <td class='group3'>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Post Questions</td>
+              <td class='group1'>&#10006;</td>
+              <td class='group2'>&#10006;</td>
+              <td class='group3'>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Post Notes</td>
+              <td class='group1'>&#10004;</td>
+              <td class='group2'>&#10004;</td>
+              <td class='group3'>&#10004;</td>
+            </tr>
+            <!-- <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+              <td>UK</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Königlich Essen</td>
+              <td>Philip Cramer</td>
+              <td>Germany</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canada</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Italy</td>
+              <td>Germany</td>
+            </tr> -->
+          </table>
+          <button id='continue' onclick='location.href="signUp.html"'> CONTINUE </button>
+    </div>
+</div>
+
+</body>
+</html>
