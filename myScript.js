@@ -1,7 +1,3 @@
-function seePlan(){
-	location.href = "plans.html";
-}
-
 function tableFunction(plan){
 	let id = plan;
 	var x = document.getElementById("plantable");
@@ -39,4 +35,12 @@ function unSelected(x,group1,group2){
 		y2[i].style.backgroundColor = "white";
 		y2[i].style.color ="black";
 	}
+}
+
+function displayDate(){
+	var n =  new Date();
+	var y = n.getFullYear();
+	var m = n.getMonth() + 2;
+	var d = n.getDate();
+	document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
 }
