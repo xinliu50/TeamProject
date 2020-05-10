@@ -35,6 +35,14 @@ h1 {
 	text-align: center;
 }
 
+.navbar {
+  background-color: #ffffff;
+}
+.navbar .navbar-brand {
+  color: #4357ad;
+}
+
+
 p {
   display: block;
   font-size: 1.4em;
