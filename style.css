@@ -17,13 +17,35 @@ body {
 }
 
 .banner {
-  background: url(imgs/bookWall.jpg);
+  background: url(images/bookWall.jpg);
   height: 800px;
   color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .blurb {
   padding-top: 300px;
   padding-right: 300px;
   text-align: right;
+}
+
+.break {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer {
+  color: #eee;
+  display: block;
+}
+
+.footerContent {
+  padding-top: 100px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  max-width: 1080px;
+  color: black;
+  text-align: center;
 }
