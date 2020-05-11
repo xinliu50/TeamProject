@@ -191,3 +191,23 @@ html[xmlns] .clearfix {
 * html .clearfix {
   height: 1%;
 }
+
+#profileBackButton a {
+  text-decoration: none;
+  display: inline-block;
+  padding:5px 20px;
+}
+
+#profileBackButton a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#profileBackButton .previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+#profileBackButton .round {
+  border-radius:50%;
+}
