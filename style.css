@@ -31,7 +31,22 @@ body {
 }
 
 .notesVidcontainer h1 {
-  text-align: center;
+  position:relative;
+  right: 200px;
+  color: #003366;
+  font-size: 1.5em;
+  font-style: italic;
+
+}
+
+.notesVidcontainer textarea{
+  border-color: #003366;
+  border-radius: 3px;
+   box-shadow: 3px 6px #003366;
+}
+.notesVidcontainer iframe{
+  position: relative;
+  top: 5px;
 }
 
 .container-lg {
