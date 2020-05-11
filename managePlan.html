@@ -64,23 +64,77 @@
 	    	<section style="margin-left:100px;">
 		   <nav style="float:left;margin-top:30px;line-height:2;">
 
-
 		      <h3>Current Plan:</h3>
-	              <hr style="width:175px;margin-left:0;color:black;background-color:black;">
+ 		      <br>
+  	    	      <label for="name" style="margin-right:30px;">Name:</label>
+		      <input type="text" id="name" readonly style="background-color:#D3D3D3;"> <br>
+		      <label for="plan" style="margin-right:40px;">Plan: </label>
+	              <input type="text" id="plan" readonly style="background-color:#D3D3D3;"> <br>
+	              <label for="cost" style="margin-right:40px;">Cost:</label>
+                      <input type="text" id="cost" readonly style="background-color:#D3D3D3;"> <br>
+                      <label for="nextDue" style="margin-right:4px;">Next Due:</label>
+                      <input type="text" id="nextDue" readonly style="background-color:#D3D3D3;"><br>
+                      <button onclick="history()" style="width:170px;color:blue;margin-top:50px;text-align:left;">View Payment History</button>
                       <br>
-		      <p><b>Basic Plan</b></p>
-		      <p><b>Monthly Cost:</b> US$14.99</p>
-		      <p><b>Account Active Since:</b> 8/28/2018</p>
-                      <p><b>Next Payment Due:</b> 6/5/20</p>
-                      <button onclick="history()" style="width:200px;color:blue;margin-top:50px;">View Payment History</button>
+		      <select id="currentPlan" style="background-color:#ffffff;height:40px;margin-top:20px;width:170px;color:blue;text-align:right;" onChange="updatePlan()">
+  			 <option value="" disabled selected>Change Plan</option>
+   			 <option value="Basic">Basic</option>
+  			 <option value="Standard">Standard</option>
+  			 <option value="Premium">Premium</option>
+		      </select>
                          <script>
+
                          function history() {
                             alert("Payment History would go here");
                          }
-                         </script>
-                      <form action="plans.html">
-                         <button type="submit" style="width:200px;color:blue;margin-top:20px;">Change Plan</button>
-                      </form>
+
+			 function updateInfo() {
+           		    document.getElementById("name").value = activeUser;
+                            document.getElementById("plan").value = accounts[activeUser].plan;
+			    document.getElementById("cost").value = accounts[activeUser].cost;
+                            document.getElementById("nextDue").value = accounts[activeUser].nextDue;
+ 			 }
+
+			function updatePlan() {
+  			   if (accounts[activeUser].plan != document.getElementById("currentPlan").value) {
+      			   var newPlan = document.getElementById("currentPlan").value;
+      			   console.log("newPlan " + newPlan);
+      			   accounts[activeUser].plan = newPlan;
+      			   accounts[activeUser].cost = obj[newPlan].cost;
+      			   console.log("updated cost: " + accounts[activeUser].cost);
+      			   updateInfo();
+  			   }
+ 			   else { 
+      			   alert("You are already on the " + accounts[activeUser].plan + " Plan.");
+ 			   }
+			}
+
+			var activeUser = "John Smith";
+
+			var accounts = [
+  			   {"name":"Jane Doe", "plan":"Standard", "cost":"$19.99", "nextDue":"5/20/2020"},
+  			   {"name":"John Smith", "plan":"Basic", "cost":"$14.99", "nextDue":"5/4/2020"},
+  			   {"name":"Barrack Obama", "plan":"Premium","cost":"$29.99", "nextDue":"6/5/2020"}
+			];
+
+			accounts.forEach(function(item) {
+  			   accounts[item.name]=item;
+			});
+
+                        var obj = [
+  			   {"plan":"Basic","cost":"$14.99"},
+  			   {"plan":"Standard","cost":"$19.99"},
+  		           {"plan":"Premium","cost":"$29.99"}
+			];
+
+			obj.forEach(function(item) {
+  			   obj[item.plan]=item;
+			});
+
+  			updateInfo();
+
+			</script>
+
                    </nav>
    
                    <div style="border-left: 3px solid black;height:510px;position:absolute;left:600px;">
@@ -146,6 +200,7 @@
 		</section>		    
          </div>
       </div>
+
       </body>
       <footer id="footer">
       </footer>
