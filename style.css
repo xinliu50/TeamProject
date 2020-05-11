@@ -22,28 +22,32 @@ body {
   background: linear-gradient(white, transparent);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+p{
+  text-align: justify;
+  margin-left: 2rem;
+}
 
 .scrolled {
   background-color: white;
   transition: 0.3s;
 }
 
-.navbar-nav a {
-  padding: 10px 15px;
+ /* .navbar-nav a {
+ padding: 10px 15px;
   text-transform: uppercase;
   text-align: center;
   display: block;
 }
 
 .navbar-nav a {
-/*  color: white;*/
-  font-size: 1.2em;
+  color: white;
+   font-size: 1.2em;
   padding: 10px;
 }
 
 .navbar-nav a:hover {
   color: #718daa;
-}
+}  */
 
 .navbar .navbar-brand {
   color: #4357ad;
@@ -65,10 +69,6 @@ body {
 
 .banner h1 {
   font-size: 4rem;
-}
-p{
-  text-align: justify;
-  margin-left: 2rem;
 }
 
 .notesVidcontainer {
@@ -422,3 +422,4 @@ span.psw {
 /* #mainNav li:nth-child(2) {
   display: none !important;
 } */
+
