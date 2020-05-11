@@ -66,6 +66,10 @@ body {
 .banner h1 {
   font-size: 4rem;
 }
+p{
+  text-align: justify;
+  margin-left: 2rem;
+}
 
 .notesVidcontainer {
   padding-top: 10%;
