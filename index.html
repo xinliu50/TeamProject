@@ -1,112 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <title>Project Name</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="myScript.js"></script>
-  </head>
-  <body>
-    <nav id="mainNav" class="navbar navbar-light navbar-expand-md">
-      <a href="#" class="navbar-brand"><b>Holder</b></a>
-      <button
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navLinks"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Raleway|Roboto|Sniglet" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="https://img2-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/16496/large_thumb_stage.jpg" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <title>Chegg</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="myScript.js"></script>
+</head>
+
+<body>
+  <nav id="mainNav" class="navbar navbar-light navbar-expand-md">
+    <a href="#" class="navbar-brand"><b>Holder</b></a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a href="index.html" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item active">
+          <a href="signIn.html" class="nav-link">Sign In</a>
+        </li>
+        <li class="nav-item active">
+          <a href="UserProfile/index.html" class="nav-link">Profile</a>
+        </li>
+        <li class="nav-item active">
+          <a href="part3.html" class="nav-link">Settings</a>
+        </li>
+        <li id="my-target" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-target="#my-target">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="UserProfile/index.html">My Profile</a>
+            <a class="dropdown-item" href="#">Sign out</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <section class="blurb">
+      <h1>HI, this is our project</h1>
+      <button type="button" class="btn btn-primary" onclick="goToPlan()">
+        SEE PLANS
       </button>
-      <div class="collapse navbar-collapse" id="navLinks">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a href="index.html" class="nav-link">HOME</a>
-          </li>
-          <li class="nav-item active">
-            <a href="signIn.html" class="nav-link">Sign In</a>
-          </li>
-          <li class="nav-item active">
-            <a href="UserProfile/index.html" class="nav-link">Profile</a>
-          </li>
-          <li class="nav-item active">
-            <a href="part3.html" class="nav-link">Settings</a>
-          </li>
-          <li id="my-target" class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              data-target="#my-target"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="UserProfile/index.html">My Profile</a>
-              <a class="dropdown-item" href="#">Sign out</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="banner">
-      <section class="blurb">
-        <h1>HI, this is our project</h1>
-        <button type="button" class="btn btn-primary" onclick="goToPlan()">
-          SEE PLANS
-        </button>
-        <p id="demo"></p>
-      </section>
-    </div>
-    
-    <section class="container-lg">
-      <div class="break">
-        <h1>Study all day</h1>
-      </div>
+      <p id="demo"></p>
     </section>
+  </div>
 
-    <div class="banner3" id="second">
-      <section class="blurb">
-        <h1>HI, this is our project</h1>
-          
-        </button>
-        <p id="demo"></p>
-      </section>
+  <section class="container-lg">
+    <div class="break">
+      <h1>Study all day</h1>
     </div>
+  </section>
 
-    <div class="card-footer">
-      <div class="footerContent">
-        <h6> Copyright Group B CISC 3140 </h6>
-      </div>
+  <div class="banner3" id="second">
+    <section class="blurb">
+      <h1>HI, this is our project</h1>
+
+      </button>
+      <p id="demo"></p>
+    </section>
+  </div>
+
+  <div class="card-footer">
+    <div class="footerContent">
+      <h6> Copyright Group B CISC 3140 </h6>
     </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!--  create return button to top of the page-->
+  <script>
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
