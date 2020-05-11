@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   font-family: "Viga", sans-serif;
@@ -11,12 +12,39 @@ body {
 }
 
 .navbar {
+  color: white;
   width: 100%;
-  list-style: none;
-  background-color: #ffffff;
   position: fixed;
+  transition: 500ms ease;
+  top: 0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  background: linear-gradient(white, transparent);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.scrolled {
+  background-color: white;
+  transition: 0.3s;
+}
+
+.navbar-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+
+.navbar-nav a {
+  color: white;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+.navbar-nav a:hover {
+  color: #718daa;
+}
+
 .navbar .navbar-brand {
   color: #4357ad;
 }
@@ -45,7 +73,7 @@ body {
 }
 
 .notesVidcontainer h1 {
-  position:relative;
+  position: relative;
   right: 200px;
   color: #003366;
   font-size: 1.5em;
@@ -53,15 +81,17 @@ body {
   padding-top: 6%;
 }
 
-.notesVidcontainer textarea{
+.notesVidcontainer textarea {
   border-color: #003366;
   border-radius: 3px;
-   box-shadow: 3px 6px #003366;
+  box-shadow: 3px 6px #003366;
 }
-.notesVidcontainer iframe{
+
+.notesVidcontainer iframe {
   position: relative;
   top: 5px;
 }
+
 .container-lg {
   margin: 1rem 0;
   background-color: rgb(243, 243, 243);
@@ -73,6 +103,7 @@ body {
   height: 800px;
   color: #ffffff;
 }
+
 .blurb {
   padding-top: 300px;
   padding-right: 300px;
@@ -93,7 +124,7 @@ body {
   padding-top: 100px;
   position: relative;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   max-width: 1080px;
   color: black;
   text-align: center;
@@ -149,7 +180,8 @@ body {
 }
 
 .planDetails #continue {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
+  /* Green */
   border: 2px solid white;
   color: white;
   padding: 16px 32px;
@@ -193,8 +225,10 @@ body {
   background-color: #4caf50;
   color: white;
 }
+
 #plantableFirstRow button {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
+  /* Green */
   border: 2px solid white;
   color: white;
   padding: 16px 32px;
@@ -210,6 +244,7 @@ body {
 .logForm body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .logForm form {
   position: absolute;
   top: 18%;
@@ -268,6 +303,7 @@ span.psw {
   float: right;
   padding-top: 16px;
 }
+
 #myBtn {
   /* display: none; */
   position: fixed;
@@ -286,6 +322,99 @@ span.psw {
 #myBtn:hover {
   background-color: #555;
 }
+
+.card-footer {
+  width: 100%;
+  position: absolute;
+}
+
+.icon a {
+  float: left;
+  */ color: pureblack;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.icon a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.icon a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.fa {
+  padding: 13px;
+  font-size: 20px;
+  width: 44px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  color: pureblack;
+}
+
+.fa-youtube {
+  color: pureblack;
+}
+
+.fa-instagram {
+  color: pureblack;
+}
+
+.fa-google {
+  color: pureblack;
+}
+
+.fa-linkedin {
+  color: pureblack;
+}
+
+.form-wrap {
+  display: block;
+  float: right;
+}
+
+.form-wrap label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-wrap input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px 40px;
+  background-color: #f4f9f9;
+  border: 1px solid #afb5b5;
+  border-radius: 5px;
+}
+
+.form-wrap button {
+  padding: 10px 40px;
+  background-color: #007bff;
+  ;
+  border: 1px solid #afb5b5;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.form-wrap button a {
+  text-decoration: none;
+  color: white;
+}
+
+.form-wrap button:hover {
+  background-color: #afb5b5;
+}
+
 /* #mainNav li:nth-child(2) {
   display: none !important;
 } */
