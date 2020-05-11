@@ -97,8 +97,6 @@ function signIn(){
 		window.alert("User Not Found!")
 	else if(password != localStorage.getItem("PASSWORD"))
 		window.alert("Wrong Password!")
-	// var userName = localStorage.getItem("USERNAME");
-	// var password = localStorage.getItem("PASSWORD");
-	// console.log(userName);
-	// console.log(password)
+	else
+		document.location.href="notes.html"
 }
