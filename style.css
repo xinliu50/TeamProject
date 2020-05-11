@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html,
 body {
   font-family: "Viga", sans-serif;
@@ -6,7 +11,11 @@ body {
 }
 
 .navbar {
+  width: 100%;
+  list-style: none;
   background-color: #ffffff;
+  position: fixed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .navbar .navbar-brand {
   color: #4357ad;
@@ -253,4 +262,22 @@ img.avatar {
 span.psw {
   float: right;
   padding-top: 16px;
+}
+#myBtn {
+  /* display: none; */
+  position: fixed;
+  bottom: 16px;
+  right: 30px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: lightgray;
+  color: gray;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }
