@@ -98,18 +98,6 @@ function signIn(){
 	else if(password != localStorage.getItem("PASSWORD"))
 		window.alert("Wrong Password!")
 	else{
-		// localStorage.setItem("SIGNIN", "YES");
-		//  document.getElementsByClassName('navbar-nav').firstChild;    
-		// //  li:nth-child(2) {
-		// // 	display: none !important;
-		// //   }')
 		document.location.href="notes.html"
 	}
-	// var navigationBar = document.getElementsByClassName('navbar-nav');
-	// var signInNavi = navigationBar[0].children[1];
-	// signInNavi.style.setProperty('display', 'none', 'important');
-
-	// var button = document.getElementById('signInNav').setProperty('display', 'none', 'important');
-	// console.log(navigationBar[0])
-	// console.log(navigationBar[0].children[1])
 }
