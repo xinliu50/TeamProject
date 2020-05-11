@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Muli|Raleway|Roboto|Sniglet" rel="stylesheet">
   <link rel="icon" type="image/ico" href="https://img2-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/16496/large_thumb_stage.jpg" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -45,12 +46,12 @@
   <div class="banner">
     <section class="blurb">
       <h1>An even smarter way to student.</h1>
-      <p> 
-        We present the design for a note-sharing platform where students can offer 
+      <p>
+        We present the design for a note-sharing platform where students can offer
         notes taken based on subjects/topics, textbooks, and video lectures. Click below
-        to see our plans and sign up! 
+        to see our plans and sign up!
       </p>
-      <br/>
+      <br />
       <button type="button" class="btn btn-primary" onclick="goToPlan()">
         SEE PLANS
       </button>
@@ -67,8 +68,8 @@
   <div class="banner3" id="second">
     <section class="blurb">
       <h1> Our Service Concept: An Extended Description </h1>
-      <p> Using Chegg— which provides digital and physical textbook rentals, online tutoring, 
-        and other student services, such as textbook/expert solutions— as the basis for the idea, 
+      <p> Using Chegg— which provides digital and physical textbook rentals, online tutoring,
+        and other student services, such as textbook/expert solutions— as the basis for the idea,
         we formulated the concept of a note-sharing platform, through which students would be able
         to offer notes taken based on subjects/topics, textbooks, and video lectures. Supplementary
         materials, such as videos or articles that students found helpful in explaining a given topic,
@@ -80,7 +81,7 @@
         to previously submitted notes before they’re put up, as well as a feedback system in order to gauge
         how helpful the notes were. Overall, the service would make notes far more accessible to students
         who physically may not be able to take notes, or simply prove to be convenient/helpful to students
-        trying to understand/solidify topics while developing more efficient note taking strategies. 
+        trying to understand/solidify topics while developing more efficient note taking strategies.
       </p>
 
       </button>
@@ -89,29 +90,60 @@
   </div>
 
   <div class="card-footer">
+    <div class="icon">
+
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="https://www.google.com" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+
+    <div class="form-wrap">
+      <label for="email" style="font-family: 'Muli', sans-serif" ;>GET BEST OFFERS BY EMAIL:</label>
+      <input type="email" id="email" placeholder="Enter you email address" name="email">
+      <button type="submit"><a href="mailto:someone@example.com?Subject=Hello%20again">send</a></button>
+    </div>
+
     <div class="footerContent">
       <h6> Copyright Group B CISC 3140 </h6>
     </div>
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
   </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
   <!--  create return button to top of the page-->
   <script>
+    window.onscroll = function() {
+      scrollFunction()
+    };
 
-  window.onscroll = function() {scrollFunction()};
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-      document.getElementById("myBtn").style.display = "block";
-    } else {
-      document.getElementById("myBtn").style.display = "none";
+    function scrollFunction() {
+      if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
     }
-  }
 
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    $(function() {
+      var header = $(".navbar");
+
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+          header.addClass("scrolled");
+        } else {
+          header.removeClass("scrolled");
+        }
+      });
+
+    });
   </script>
 
 
